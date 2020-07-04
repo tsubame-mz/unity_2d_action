@@ -777,8 +777,8 @@ Tilemap:
   - first: {x: -10, y: -8, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1065,8 +1065,8 @@ Tilemap:
   - first: {x: -10, y: -7, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 11
-      m_TileSpriteIndex: 11
+      m_TileIndex: 35
+      m_TileSpriteIndex: 35
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1805,7 +1805,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 49e5c376a5806f34eac05847369922a7, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 939a120336c2a5042a755c1f67f9ba3c, type: 2}
-  - m_RefCount: 5
+  - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 909fa3fa820e6274f8a6f82d326518ff, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 2b49e7a0e969fb94589db3d38f2e68cc, type: 2}
@@ -1815,7 +1815,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 217407ba52eaec04191f195663f49300, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 750c3536843de41438c2ab471830b0bb, type: 2}
-  - m_RefCount: 5
+  - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 7ad18de263e1f964fbd7372b51051543, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 4697cc5f5aa01f34dad059975be4b046, type: 2}
@@ -1861,6 +1861,10 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 8bd4787aefd4433439caef09724c62fd, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: b861ae00389058043b2ee7cee0a8f9e3, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: be7b557356fba914fab266da1787de9f, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: fecf58c05492f9d4db09c1255b525a47, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 30
     m_Data: {fileID: 2492004042214043949, guid: db78797814709d54296e11c43e936389,
@@ -1880,7 +1884,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 2534797647697017659, guid: db78797814709d54296e11c43e936389,
       type: 3}
-  - m_RefCount: 5
+  - m_RefCount: 4
     m_Data: {fileID: -796906297672391504, guid: db78797814709d54296e11c43e936389,
       type: 3}
   - m_RefCount: 1
@@ -1895,7 +1899,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -8204820221692255543, guid: db78797814709d54296e11c43e936389,
       type: 3}
-  - m_RefCount: 5
+  - m_RefCount: 4
     m_Data: {fileID: -6233458931719022677, guid: db78797814709d54296e11c43e936389,
       type: 3}
   - m_RefCount: 1
@@ -1961,6 +1965,11 @@ Tilemap:
     m_Data: {fileID: 313651839404696180, guid: db78797814709d54296e11c43e936389, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 3020870990670601969, guid: db78797814709d54296e11c43e936389,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 517537040645658821, guid: db78797814709d54296e11c43e936389, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 1154340479819735195, guid: db78797814709d54296e11c43e936389,
       type: 3}
   m_TileMatrixArray:
   - m_RefCount: 151
@@ -2077,6 +2086,70 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9585610, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 84da49436bb295046bac77d3fcf00e5d, type: 2}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: timeToGroundSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: groundStopDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: airSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: timeToAirSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: airStopDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: gravityMultiplier
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: jumpHeight
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: extraJumpHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: wallSticksDuration
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: timeToWallSlideSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: enableDashes
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: enableCornerGrabs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405038, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: jumpRotationSpeed
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
