@@ -4,9 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Spike : MonoBehaviour {
-    // プレイヤーの被弾アニメーション
-    public PlayerHit m_playerHitPrefab;
-
     // Start is called before the first frame update
     void Start() {
 
@@ -20,23 +17,9 @@ public class Spike : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         // プレイヤーと衝突した場合
         if (other.name.Contains("Player")) {
-            // プレイヤーを削除する
-            Destroy(other.gameObject);
-
-            // シーン内のCameraShakerスクリプトを検索する
-            var cameraShaker = FindObjectOfType<CameraShaker>();
-            cameraShaker.Shake();
-
-            // 2秒後にリトライする
-            Invoke("OnRetry", 2);
-
-            // 被弾アニメーションを生成
-            Instantiate(m_playerHitPrefab, other.transform.position, Quaternion.identity);
+            // プレイヤーの被弾時イベントを呼び出す
+            var player = other.GetComponent<Player>();
+            player.Dead();
         }
-    }
-
-    // シーンを読み直してリトライする
-    private void OnRetry() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
