@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_collectedPrefab: {fileID: 5296887466001584150, guid: 230caafbd7591a14d9440182d3f1933e,
     type: 3}
+  m_collectedClip: {fileID: 8300000, guid: 26a4b5b9c6444e443a128c6b02b1d99a, type: 3}
 --- !u!58 &4760644454578627497
 CircleCollider2D:
   m_ObjectHideFlags: 0

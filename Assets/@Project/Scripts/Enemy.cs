@@ -16,6 +16,9 @@ public class Enemy : MonoBehaviour {
     // 被弾アニメーション
     public GameObject m_hitPrefab;
 
+    // 被弾時のSE
+    public AudioClip m_hitClip;
+
     private void Awake() {
         m_motor = GetComponent<PlatformerMotor2D>();
         m_motor.normalizedXMovement = -1;   // 左に移動する
@@ -70,6 +73,14 @@ public class Enemy : MonoBehaviour {
 
                 // 被弾アニメーションを生成
                 Instantiate(m_hitPrefab, transform.position, Quaternion.identity);
+
+                // 被弾時のSEを再生
+                var audioSource = FindObjectOfType<AudioSource>();
+                audioSource.PlayOneShot(m_hitClip);
+
+                // プレイヤーのジャンプ時のSEを再生させないようにする
+                var player = other.GetComponent<Player>();
+                player.IsSkipJumpSe = true;
             }
             else {
                 // プレイヤーの被弾時イベントを呼び出す

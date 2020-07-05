@@ -7,6 +7,9 @@ public class Fruit : MonoBehaviour {
     // アイテム獲得時のエフェクト
     public GameObject m_collectedPrefab;
 
+    // 獲得時のSE
+    public AudioClip m_collectedClip;
+
     // Start is called before the first frame update
     void Start() {
 
@@ -33,6 +36,10 @@ public class Fruit : MonoBehaviour {
 
             // 自身を削除
             Destroy(this.gameObject);
+
+            // 獲得時のSEを再生
+            var audioSource = FindObjectOfType<AudioSource>();
+            audioSource.PlayOneShot(m_collectedClip);
         }
     }
 }

@@ -6,6 +6,9 @@ public class Goal : MonoBehaviour {
     // ゴールしたかどうか
     private bool m_isGoal;
 
+    // ゴール時のSE
+    public AudioClip m_goalClip;
+
     // Start is called before the first frame update
     void Start() {
 
@@ -28,6 +31,10 @@ public class Goal : MonoBehaviour {
             // ゴール時のアニメーションを再生
             var animator = GetComponent<Animator>();
             animator.Play("Pressed");
+
+            // ゴール時のSEを再生
+            var audioSource = FindObjectOfType<AudioSource>();
+            audioSource.PlayOneShot(m_goalClip);
         }
     }
 }
